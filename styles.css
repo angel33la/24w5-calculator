@@ -1,1 +1,78 @@
-/* add your styles the way you want them in here! */
+/* calculator styles */
+*, ::after, ::before {
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(214, 214, 214);
+    color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator {
+    margin: 35px auto;
+    border-radius: 10px;
+    background-color: rgb(214, 214, 214);
+    box-shadow: 5px 5px 10px #b6a9a9,
+        -5px -5px 10px #ffffff;
+    width: 200px;
+}
+
+input#display {
+    width: 197px;
+    height: 48px;
+    font-size: 20px;
+    color: #111;
+}
+
+#display {
+    border: 1px solid lightgray;
+    outline: none;
+    color: black;
+    text-align: right;
+    font-weight: 900;
+    padding: 15px;
+    margin: 30px 0 20px 0;
+    background: transparent;
+    box-shadow: inset 2px 2px 5px #babecc,
+        inset -5px -5px 10px #ffffff;
+}
+
+button {
+    margin: 10px 1px 1px 5px;
+    padding: 12px 2px 12px 1px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(214, 214, 214);
+    box-shadow: 5px 5px 10px #b6acac,
+        -5px -5px 10px #faf4f4;
+    display: inline-block;
+}
+
+button:hover {background-color: darkred;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 2px #babecc,
+    inset -1px -1px 2px #fff;
+}
+
+#clear {
+    color: white;
+    background-color: red;
+}
+
+.operator, .equals {
+    color: white;
+    background-color: black;
+}
